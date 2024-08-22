@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Macronutrientes</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Macronutrientes</h1>
+        <label for="food-select">Selecciona un alimento:</label>
+        <select id="food-select">
+            <option value="">Seleccionar...</option>
+            <option value="egg">Huevo cocido (55g)</option>
+            <option value="avocado">Aguacate pequeño</option>
+            <option value="oatmeal">Avena (50g)</option>
+            <option value="peanut">Maní (50g)</option>
+            <option value="bacon">Tocino (45g)</option>
+        </select>
+        <button  class="boton-calcular" onclick="calculateNutrition()">Calcular</button>
+        <div id="results">
+            <p>Proteínas: <span id="protein">0</span> g</p>
+            <p>Grasas: <span id="fat">0</span> g</p>
+            <p>Carbohidratos: <span id="carbs">0</span> g</p>
+            <p>Calorías: <span id="calories">0</span> kcal</p>
+        </div>
+    </div>
+    <script src="./conteo.js"></script>
+</body>
+</html>
